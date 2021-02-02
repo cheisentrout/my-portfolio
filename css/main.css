@@ -91,6 +91,10 @@ textarea {
 
 /*Testing testing testing*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -191,8 +195,6 @@ h3 {
 
 #about h3 {
   color: gray;
-  font-family: "lato";
-  text-transform: lighter;
 }
 
 .bio {
@@ -230,13 +232,21 @@ img {
 }
 
 #github {
-  margin-top: 20px;
+  background-color: #21665C;
+  color: white;
+  margin-top: 40px;
+  padding: 10px 0 20px 0;
   text-transform: bold;
   text-align: center;
+  width: 100%;
+}
+
+#github a {
+  color: white;
 }
 
 #github a:hover {
-  color: #21665C;
+  color: gray;
   }
 
 /* CONTACT - Mobile Styles */
@@ -277,6 +287,28 @@ address {
 
 i {
   font-size: 1.6em;
+}
+
+i:hover {
+  color: #21665C;
+}
+
+#scrollButton {
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background-color: #21665C;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: gray;
 }
 
 .copyright {
@@ -427,11 +459,15 @@ i {
   #projectOne,
   #projectTwo {
     width: 45%;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   #projectOne {
     padding-top: 20px;
+  }
+
+  #projectOne p {
+    text-align: left;
   }
 
   #work img {
@@ -443,9 +479,14 @@ i {
 @media only screen and (min-width: 1200px) {
   /* DESKTOP STYLES */
 
-  /* ABOUT - Desktop Styles */
+  /* HERO AREA - Desktop */
 
+  #fullName h1 {
+    font-size: 2.5em;
+    letter-spacing: 35px;
   }
+
+  /* ABOUT - Desktop Styles */
 }
 
 @media print,
