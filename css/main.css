@@ -123,6 +123,10 @@ section {
   justify-content: space-between;
 }
 
+#header h2 {
+  margin-left: 10px;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -183,6 +187,10 @@ h3 {
   text-align: center;
 }
 
+#about h3 {
+  color: gray;
+}
+
 .bio {
   margin: 0 15px;
 }
@@ -197,6 +205,7 @@ h3 {
 }
 
 #work h2 {
+  color: #21665C;
   margin: 20px 0 40px 0;
 }
 
@@ -225,6 +234,50 @@ img {
 #github a:hover {
   color: #21665C;
   }
+
+/* CONTACT - Mobile Styles */
+
+#contact .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 40px 15px 20px 15px;
+}
+
+#contact h2 {
+  color: #21665C;
+  width: 100%;
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+}
+
+/* FOOTER - Mobile Styles */
+
+#footer .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+}
+
+i {
+  font-size: 1.6em;
+}
+
+.copyright {
+  font-size: .8em;
+  text-align: center;
+  width: 100%;
+}
 
 }
 
