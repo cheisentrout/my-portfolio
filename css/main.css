@@ -90,7 +90,7 @@ textarea {
 /* BASE STYLES */
 
 img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -98,20 +98,21 @@ body {
   font-family: "lato";
   font-size: 16px;
   letter-spacing: 1px; 
-  width: 100%;
 }
 
 h1,
 h2,
 h3 {
   font-family: "bodoni moda";
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
-h1 {
-  letter-spacing: 1em;
-  font-size: 2em;
-  text-transform: uppercase;
+section {
+  width: 100%;
+}
+
+.content-wrapper {
+  margin: 10px;
 }
 
 /* HEADER - Mobile Styles */
@@ -141,18 +142,22 @@ li:hover {
 /* HERO AREA - Mobile Styles */
 
 #fullName {
-  background-color: #21665C;
+  background-color: #21665C; ;
 }
 
 #fullName .content-wrapper {
   margin: none;
-  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 #fullName h1 {
   padding: 15px;
   color: white;
-  background-color: #21665C;
+  letter-spacing: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 /* ABOUT - Mobile Styles */
@@ -160,11 +165,68 @@ li:hover {
 #about .content-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-around;
+  margin: 30px 0 50px 0;
 }
 
+figure {
+  display: flex;
+  justify-content: center;
+}
 
+#about img {
+  width: 50%;
+}
 
+#about h2,
+h3 {
+  text-align: center;
+}
+
+.bio {
+  margin: 0 15px;
+}
+
+/* WORK - Mobile Styles */
+
+#work .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#work h2 {
+  margin: 20px 0 40px 0;
+}
+
+img {
+  width: 95%;
+}
+
+#projectOne,
+#projectTwo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#projectOne h3,
+#projectTwo h3 {
+  width: 100%;
+}
+
+#github {
+  margin-top: 20px;
+  text-transform: bold;
+  text-align: center;
+}
+
+#github a:hover {
+  color: #21665C;
+  }
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -254,8 +316,63 @@ li:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* TABLET STYLES */
+
+  /* ABOUT - Tablet Styles */
+
+  #about .content-wrapper {
+    flex-flow: row nowrap;
+  }
+
+  figure {
+    margin: 15px 0;
+    width: 45%;
+
+  }
+
+  .bio {
+    width: 45%;
+  }
+
+  #about h2,
+  h3 {
+    text-align: left;
+  }
+
+  /* WORK - Tablet Styles */
+
+  #work .content-wrapper {
+    justify-content: space-around;
+  }
+
+  #work h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #projectOne,
+  #projectTwo {
+    width: 45%;
+    justify-content: space-around;
+  }
+
+  #projectOne {
+    padding-top: 20px;
+  }
+
+  #work img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* DESKTOP STYLES */
+
+  /* ABOUT - Desktop Styles */
+
+  }
 }
 
 @media print,
