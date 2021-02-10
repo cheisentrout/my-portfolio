@@ -103,7 +103,8 @@ img {
 body {
   font-family: "lato";
   font-size: 16px;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
+  margin-top: 90px;
 }
 
 h1,
@@ -122,6 +123,16 @@ section {
 }
 
 /* HEADER - Mobile Styles */
+
+#header {
+  background-color: white;
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+}
 
 #header .content-wrapper {
   display: flex;
@@ -152,7 +163,8 @@ li:hover {
 /* HERO AREA - Mobile Styles */
 
 #fullName {
-  background-color: #21665C; ;
+  background-color: #21665C;
+
 }
 
 #fullName .content-wrapper {
@@ -293,7 +305,7 @@ i:hover {
   color: #21665C;
 }
 
-#scrollButton {
+#button {
   margin: 30px 0;
   width: 100%;
   text-align: center;

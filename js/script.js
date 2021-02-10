@@ -1,6 +1,6 @@
 //get the HTML scroll to top button
 
-var scrollButton = document.getElementById("myBtn");
+var scrollButton = document.getElementById("scrollButton");
 
 window.onscroll = function() {scrollFunction()};
 
