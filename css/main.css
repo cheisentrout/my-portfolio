@@ -164,7 +164,13 @@ li:hover {
 
 #fullName {
   background-color: #21665C;
+  transition-duration: 1s;
 
+}
+
+#fullName:hover {
+  opacity: 75%;
+  transition-duration: 1s;
 }
 
 #fullName .content-wrapper {
@@ -180,6 +186,12 @@ li:hover {
   letter-spacing: 20px;
   font-size: 1.4em;
   text-transform: uppercase;
+  transition-duration: 1s;
+}
+
+#fullName h1:hover {
+  letter-spacing: 25px;
+  transition-duration: 1s;
 }
 
 /* ABOUT - Mobile Styles */
@@ -227,8 +239,14 @@ h3 {
   margin: 20px 0 40px 0;
 }
 
-img {
+#work img {
+  transition-duration: .5s;
   width: 95%;
+}
+
+#work img:hover {
+  opacity: 65%;
+  transition-duration: .5s;
 }
 
 #projectOne,
@@ -240,6 +258,17 @@ img {
 
 #projectOne h3,
 #projectTwo h3 {
+  width: 100%;
+}
+
+#projectOne h3:hover,
+#projectTwo h3:hover {
+  color: #21665C;
+}
+
+#projectOne p,
+#projectTwo p {
+  padding-left: 10px;
   width: 100%;
 }
 
@@ -255,10 +284,12 @@ img {
 
 #github a {
   color: white;
+  transition-duration: 1s;
 }
 
 #github a:hover {
-  color: gray;
+  letter-spacing: .2em;
+  transition-duration: 1s;
   }
 
 /* CONTACT - Mobile Styles */
@@ -317,11 +348,18 @@ button {
   color: white;
   padding: 10px;
   width: 100px;
+  outline: none;
 }
 
 button:hover {
   background-color: gray;
 }
+
+button:focus {
+  outline: #21665C;
+}
+
+
 
 .copyright {
   font-size: .8em;
@@ -429,6 +467,11 @@ button:hover {
     letter-spacing: 30px;
   }
 
+  #fullName h1:hover {
+  letter-spacing: 32px;
+  transition-duration: 3s;
+}
+
   /* ABOUT - Tablet Styles */
 
   #about .content-wrapper {
@@ -497,6 +540,11 @@ button:hover {
     font-size: 2.5em;
     letter-spacing: 35px;
   }
+
+  #fullName h1:hover {
+  letter-spacing: 50px;
+  transition-duration: 3s;
+}
 
   /* ABOUT - Desktop Styles */
 }
