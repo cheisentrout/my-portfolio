@@ -40,7 +40,7 @@
 
 <section id="header">
   <div class="content-wrapper">
-    <h2>C E</h2>
+    <a href="#top"><h2>C E</h2></a>
     <nav>
       <ul>
         <a href="#about"><li>about</li></a>
@@ -64,12 +64,12 @@
 <section id="about">
   <div class="content-wrapper">
     <figure>
-      <img src="img/bw-headshot.jpg" alt="Clare Eisentrout Headshot">
+      <img id="me" src="img/bw-headshot.jpg" alt="Clare Eisentrout Headshot">
     </figure>
     <div class="bio">
       <h2>Hi, I'm Clare!</h2>
-      <h3>I'm a front end developer <br>with a creative edge.</h3>
-      <p>My professional life began in the arts, as an actor and musician. Now I code, primarily in front-end languages, to develop beuatifully designed, thoughtful digital products.</p>
+      <h3>I'm a front end developer <br><span>with a creative edge.</span></h3>
+      <p>My professional life began in the arts, as an actor and musician. Now I work as a software engineer to develop beautifully designed, thoughtful digital products.</p>
     </div>
   </div>
 </section>
@@ -83,13 +83,13 @@
       <a href="https://cheisentrout.github.io/music-mill/" target="https://cheisentrout.github.io/music-mill/"><img src="img/music-mill-screenshot.png" alt="Music Mill Website Screenshot"></a>
       <a href="https://cheisentrout.github.io/music-mill/" target="https://cheisentrout.github.io/music-mill/">
         <h3>Music Mill</h3></a>
-      <p>This was a self-designed and developed project...</p>
+      <p>Fully responsive website for a (fictional!) music recording studio and artist retreat. I designed and developed this project from scratch.</p>
     </div>
     <div id="projectTwo">
       <a href="link to github here" target=""><img src="img/dorothy-screenshot.png" alt="Dorothy DeLong Portfolio Screenshot"></a>
       <a href="link to github here" target="">
         <h3>Dorothy DeLong</h3></a>
-      <p>Here's some text about the other project...</p>
+      <p>Portfolio site for a fictional photographer! This was assigned through a design course I took, and I decided to develop it as programming practice as well.</p>
     </div>
     <div id="github">
       <p>You can view more of my work and my source code here:</p>
@@ -127,6 +127,29 @@
     </div>
   </div>
 </section>
+
+<script>
+
+const header = document.querySelector('#header');
+const topOfHeader = header.offsetTop;
+
+function fixHeader() {
+  //You can check the value of topOfNav, and the distance scrolled by using: console.log(topOfNav, window.scrollY);
+  if(window.scrollY >= topOfHeader) {
+	document.body.style.paddingTop = header.offsetHeight + 'px'; /* This adds padding to the body
+	once the nav is fixed, so that the nav doesn't cover or distort the spacing of the rest of the
+	page. It says "append the amount of padding that is equal to the height of the nav, in pixels." */
+	document.body.classList.add('fixed-nav');
+  } else {
+	document.body.style.paddingTop = 0; /* Note: in an if/else statement like this, make sure in your "else"
+	state, you're removing every property that you added in your "if". */
+	document.body.classList.remove('fixed-nav');
+  }
+};
+
+window.addEventListener('scroll', fixHeader); 
+
+</script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

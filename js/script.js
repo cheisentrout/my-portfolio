@@ -1,19 +1,19 @@
-//get the HTML scroll to top button
+// const header = document.querySelector('#header');
+// const topOfHeader = header.offsetTop;
 
-var scrollButton = document.getElementById("scrollButton");
+// function fixHeader() {
+//   //You can check the value of topOfNav, and the distance scrolled by using: console.log(topOfNav, window.scrollY);
+//   if(window.scrollY >= topOfHeader) {
+// 	document.body.style.paddingTop = header.offsetHeight + 'px'; /* This adds padding to the body
+// 	once the nav is fixed, so that the nav doesn't cover or distort the spacing of the rest of the
+// 	page. It says "append the amount of padding that is equal to the height of the nav, in pixels." */
+// 	document.body.classList.add('fixed-nav');
+//   } else {
+// 	document.body.style.paddingTop = 0; /* Note: in an if/else statement like this, make sure in your "else"
+// 	state, you're removing every property that you added in your "if". */
+// 	document.body.classList.remove('fixed-nav');
+//   }
+// };
 
-window.onscroll = function() {scrollFunction()};
+// window.addEventListener('scroll', fixNav);
 
-//create the function
-var scrollToTop = function()
-{
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
-	{
-   		 mybutton.style.display = "block";
-  } else 
-  	{
-    	mybutton.style.display = "none";
-  	}
-};
-
-scrollButton.addEventListener("click", scrollToTop);
