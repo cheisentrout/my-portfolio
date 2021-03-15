@@ -69,7 +69,16 @@
     <div class="bio">
       <h2>Hi, I'm Clare!</h2>
       <h3>I'm a front end developer <br><span>with a creative edge.</span></h3>
-      <p>My professional life began in the arts, as an actor and musician. Now I work as a software engineer to develop beautifully designed, thoughtful digital products.</p>
+      <p>My professional life began in the arts, as an actor, musician and educator. 
+        Now I work as a front end developer, bringing everything I know about storytelling, 
+        learning, and teamwork to tech.</p>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>JavaScript</li>
+        <li>Adobe Creative Suite</li>
+        <li>Visual Design</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -80,16 +89,16 @@
   <div class="content-wrapper">
     <h2>work</h2>
     <div id="projectOne">
-      <a href="https://cheisentrout.github.io/music-mill/" target="https://cheisentrout.github.io/music-mill/"><img src="img/music-mill-screenshot.png" alt="Music Mill Website Screenshot"></a>
+      <a href="https://cheisentrout.github.io/music-mill/" target="https://cheisentrout.github.io/music-mill/"><img src="img/music.png" alt="Music Mill Website Screenshot"></a>
       <a href="https://cheisentrout.github.io/music-mill/" target="https://cheisentrout.github.io/music-mill/">
         <h3>Music Mill</h3></a>
-      <p>Fully responsive website for a (fictional!) music recording studio and artist retreat. I designed and developed this project from scratch.</p>
+      <p>I designed and built this fully responsive site for a recording studio and artist retreat.</p>
     </div>
     <div id="projectTwo">
-      <a href="link to github here" target=""><img src="img/dorothy-screenshot.png" alt="Dorothy DeLong Portfolio Screenshot"></a>
+      <a href="link to github here" target=""><img src="img/dorothy.png" alt="Dorothy DeLong Portfolio Screenshot"></a>
       <a href="link to github here" target="">
         <h3>Dorothy DeLong</h3></a>
-      <p>Portfolio site for a fictional photographer! This was assigned through a design course I took, and I decided to develop it as programming practice as well.</p>
+      <p>I built this site for a design course and developed it as well!</p>
     </div>
     <div id="github">
       <p>You can view more of my work and my source code here:</p>
@@ -145,6 +154,7 @@ function fixHeader() {
 	state, you're removing every property that you added in your "if". */
 	document.body.classList.remove('fixed-nav');
   }
+  console.log(topOfHeader, window.scrollY);
 };
 
 window.addEventListener('scroll', fixHeader); 

@@ -133,6 +133,7 @@ section {
 
 .fixed-nav #header {
   position: fixed;
+  margin-bottom: 90px;
 }
 
 #header .content-wrapper {
@@ -211,22 +212,22 @@ figure {
 
 #about img {
   width: 50%;
+  min-width: 315px;
 }
 
-#about h2,
-h3 {
+#about h2 {
   text-align: center;
+  font-size: 2em;
 }
 
 #about h3 {
+  text-align: center;
   color: gray;
+  font-size: 1.5em;
 }
 
 #about h3 span {
-  background: -webkit-linear-gradient(#eee, #21665C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  color: #21665C
 }
 
 .bio {
@@ -250,11 +251,13 @@ h3 {
 #work img {
   transition-duration: .5s;
   width: 95%;
+  transform: scale(0.98); 
 }
 
 #work img:hover {
   opacity: 65%;
   transition-duration: .5s;
+  transform: scale(1);
 }
 
 #projectOne,
@@ -503,9 +506,13 @@ button:focus {
     width: 45%;
   }
 
-  #about h2,
-  h3 {
+  #about h2, #about h3 {
     text-align: left;
+  }
+
+  #about ul {
+    padding-left: 0;
+    display: block;
   }
 
   /* WORK - Tablet Styles */
