@@ -232,10 +232,6 @@ figure {
   text-align: right;
 }
 
-h4 span {
-  font-size: 1em;
-}
-
 #about ul {
   display: block;
 }
@@ -581,6 +577,10 @@ button:focus {
 }
 
   /* ABOUT - Desktop Styles */
+
+#about .content-wrapper {
+  max-width: 1200px;
+  margin-left: 160px;
 }
 
 @media print,
